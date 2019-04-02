@@ -3,7 +3,7 @@ include		GENERIC
 nooptions	KDB_TRACE
 options		DDB
 
-ident		MyFirewall
+ident		HHFW
 
 nooptions	MAC		# TrustedBSD MAC Framework
 nooptions	COMPAT_FREEBSD4	# Compatible with FreeBSD4
@@ -151,9 +151,9 @@ options		MSGSEG=512	# number of message segments per queue
 options		MSGSSZ=32	# size of a message segment
 options		MSGTQL=2048	# max messages in system
 
-device		pf
-device		pflog
-device		pfsync
+device		hhfw
+device		hhfwlog
+device		hhfwsync
 
 device		rndtest		# FIPS 140-2 entropy tester
 device		hifn		# Hifn 7951, 7781, etc.
