@@ -152,8 +152,8 @@ options		MSGSSZ=32	# size of a message segment
 options		MSGTQL=2048	# max messages in system
 
 device		hhfw
-device		hhfwlog
-device		hhfwsync
+device		pflog
+device		pfsync
 
 device		rndtest		# FIPS 140-2 entropy tester
 device		hifn		# Hifn 7951, 7781, etc.
