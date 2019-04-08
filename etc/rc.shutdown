@@ -27,9 +27,9 @@
 # $FreeBSD$
 #
 
-# Call pfSense version of this script when it's available
-if [ -f /etc/pfSense-rc.shutdown ]; then
-	. /etc/pfSense-rc.shutdown
+# Call HHFW version of this script when it's available
+if [ -f /etc/HHFW-rc.shutdown ]; then
+	. /etc/HHFW-rc.shutdown
 	exit 0
 fi
 
